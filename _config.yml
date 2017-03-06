@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Running 
+title: 起航了
 subtitle:
-description:
-author: Marcello Cai
-language: cn
+description: 吾生有涯，而知无涯。
+author: Yilong
+language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
@@ -63,9 +63,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:MarcelloCai/marcellocai.github.io.git
+  branch: master
+  message: "Blog updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
